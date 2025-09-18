@@ -1,0 +1,6 @@
+services:
+  api:
+    container_name: api
+    build: .
+    ports:
+      - "7860:80"
