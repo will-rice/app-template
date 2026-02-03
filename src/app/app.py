@@ -1,13 +1,17 @@
-"""Main module for the app package."""
+"""Main module for the app package.
 
-import gradio as gr
+This is a sample application demonstrating the template structure.
+Replace this with your actual application code.
+"""
 
 
-def main():
-    """Main function for the app."""
-    with gr.Blocks() as demo:
-        gr.Markdown("# Hello World")
-    demo.launch(server_port=80, server_name="0.0.0.0")
+def main() -> None:
+    """Main entry point for the application.
+
+    This is a placeholder function. Replace with your application logic.
+    """
+    print("Hello from Python Project Template!")
+    print("Replace this with your application code.")
 
 
 if __name__ == "__main__":

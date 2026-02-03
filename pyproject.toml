@@ -1,19 +1,24 @@
 [project]
-name = "app"
+name = "app"  # TODO: Change to your project name
 version = "0.1.0"
-description = "A app template."
+description = "A Python project template with modern tooling and best practices"  # TODO: Update description
 readme = "README.md"
 authors = [
-    { name = "Will Rice", email = "wrice20@gmail.com" }
+    { name = "Your Name", email = "your.email@example.com" }  # TODO: Update author info
 ]
 requires-python = ">=3.11"
 dependencies = [
-    "gradio>=5.46.0",
+    # Add your runtime dependencies here
+    # Example: "requests>=2.31.0",
+]
+
+[project.optional-dependencies]
+dev = [
     "mypy>=1.15.0",
     "pre-commit>=4.1.0",
     "pydocstyle>=6.3.0",
     "pytest>=8.3.4",
-    "python-dotenv>=1.1.1",
+    "pytest-cov>=4.1.0",
     "ruff>=0.9.7",
 ]
 
@@ -22,10 +27,10 @@ requires = ["uv_build>=0.8.9,<0.9.0"]
 build-backend = "uv_build"
 
 [tool.uv.build-backend]
-module-name = ["app"]
+module-name = ["app"]  # TODO: Change to match your project name
 
 [tool.ruff.lint.isort]
-known-first-party = ["app"]
+known-first-party = ["app"]  # TODO: Change to match your project name
 
 [tool.ruff.lint]
 select = ["C", "E", "F", "I", "W", "D", "N", "B"]
@@ -46,4 +51,4 @@ follow_imports_for_stubs = true
 exclude = [".venv"]
 
 [project.scripts]
-app = "app.app:main"
+app = "app.app:main"  # TODO: Update to match your project structure and entry point
