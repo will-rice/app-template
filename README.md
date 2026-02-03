@@ -134,7 +134,7 @@ docker-compose up --build
 
 # Using Docker directly
 docker build -t my-project .
-docker run -p 7860:80 my-project
+docker run -p 8000:8000 my-project
 ```
 
 Update `docker-compose.yml` and `dockerfile` as needed for your application.
