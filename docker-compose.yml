@@ -1,6 +1,6 @@
 services:
-  api:
-    container_name: api
+  app:
+    container_name: python-app
     build: .
     ports:
-      - "7860:80"
+      - "8000:8000"  # TODO: Update ports as needed for your application
