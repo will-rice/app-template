@@ -7,7 +7,7 @@ A Python application template built with Gradio for quick web app development.
 - 🐍 Python 3.11+ support
 - 🎨 Gradio web interface
 - 🐳 Docker containerization
-- 🧹 Code quality tools (Ruff, MyPy, pre-commit)
+- 🧹 Code quality tools (Ruff, ty, pre-commit)
 - 🧪 Testing with pytest
 - 📦 Modern Python packaging with uv
 
@@ -48,7 +48,7 @@ A Python application template built with Gradio for quick web app development.
 This project uses several tools to maintain code quality:
 
 - **Ruff**: Fast Python linter and formatter
-- **MyPy**: Static type checking
+- **ty**: Static type checking
 - **pytest**: Testing framework
 - **pre-commit**: Git hooks for automated checks
 
@@ -68,7 +68,7 @@ uv run ruff format
 ### Type Checking
 
 ```bash
-uv run mypy src/
+uv run ty check
 ```
 
 ## Project Structure
@@ -89,7 +89,7 @@ The application is configured through `pyproject.toml`, which includes:
 
 - Project metadata and dependencies
 - Ruff linting rules
-- MyPy type checking settings
+- ty type checking
 - pytest configuration
 
 ## License
