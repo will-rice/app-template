@@ -3,22 +3,20 @@ name = "app"
 version = "0.1.0"
 description = "A app template."
 readme = "README.md"
-authors = [
-    { name = "Will Rice", email = "wrice20@gmail.com" }
-]
-requires-python = ">=3.11"
+authors = [{ name = "Will Rice", email = "wrice20@gmail.com" }]
+requires-python = ">=3.13"
 dependencies = [
-    "gradio>=5.46.0",
-    "mypy>=1.15.0",
-    "pre-commit>=4.1.0",
-    "pydocstyle>=6.3.0",
-    "pytest>=8.3.4",
-    "python-dotenv>=1.1.1",
-    "ruff>=0.9.7",
+  "gradio>=6.28.0",
+  "mypy>=2.3.1",
+  "pre-commit>=4.6.2",
+  "pydocstyle>=6.3.0",
+  "pytest>=9.1.1",
+  "python-dotenv>=1.2.3",
+  "ruff>=0.16.8",
 ]
 
 [build-system]
-requires = ["uv_build>=0.8.9,<0.9.0"]
+requires = ["uv_build>=0.12.18"]
 build-backend = "uv_build"
 
 [tool.uv.build-backend]
@@ -34,11 +32,6 @@ exclude = [".venv"]
 
 [tool.ruff.lint.pydocstyle]
 convention = "google"
-
-[tool.pytest.ini_options]
-filterwarnings = [
-    "ignore::DeprecationWarning",
-]
 
 [tool.mypy]
 ignore_missing_imports = true
