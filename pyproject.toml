@@ -4,7 +4,7 @@ version = "0.1.0"
 description = "A app template."
 readme = "README.md"
 authors = [{ name = "Will Rice", email = "wrice20@gmail.com" }]
-requires-python = ">=3.11"
+requires-python = ">=3.13"
 dependencies = [
   "gradio>=6.28.0",
   "mypy>=2.3.1",

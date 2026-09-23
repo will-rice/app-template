@@ -4,7 +4,7 @@ A Python application template built with Gradio for quick web app development.
 
 ## Features
 
-- 🐍 Python 3.11+ support
+- 🐍 Python 3.13+ support
 - 🎨 Gradio web interface
 - 🐳 Docker containerization
 - 🧹 Code quality tools (Ruff, MyPy, pre-commit)
